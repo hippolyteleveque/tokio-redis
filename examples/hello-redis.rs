@@ -10,8 +10,9 @@ async fn main() -> Result<()> {
 
     // Get key "hello"
     let result = client.get("hello").await?;
+    let result2= client.get("hello").await?;
 
-    println!("got value from the server; result={:?}", result);
+    println!("got value from the server; result={:?}, result2={:?}", result, result2);
 
     Ok(())
 }
